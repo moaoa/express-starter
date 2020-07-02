@@ -4,6 +4,7 @@ const port = process.env.PORT || 5000;
 
 if (process.env.NODE_ENV !== 'production') {
     require('morgan')('tiny');
+    require('dotenv').config();
 }
 // middleware
 app.use(express.urlencoded({ extended: false }));
